@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zhang Qiuyu · Coastal &amp; Offshore Engineering | Typhoon Forecasting · Storm Surge Modeling</title>
+<meta name="description" content="Zhang Qiuyu, M.S. in Port, Coastal and Offshore Engineering at Hohai University. Multimodal typhoon data fusion, Pangu-Weather inference and ADCIRC storm surge modeling.">
+<meta name="author" content="Zhang Qiuyu">
+<meta property="og:title" content="Zhang Qiuyu · Typhoon Forecasting & Storm Surge Modeling">
+<meta property="og:description" content="Multimodal typhoon data fusion · Large weather model inference · Storm surge modeling">
+<meta property="og:type" content="profile">
+<link rel="stylesheet" href="../assets/css/style.css">
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="index.html">Zhang Qiuyu</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+      </svg>
+    </button>
+
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#honors">Honors</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav__lang" href="../index.html" hreflang="zh-CN">中文</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div>
+        <p class="hero__eyebrow">Coastal &amp; Offshore Engineering · Typhoon Forecasting / Storm Surge</p>
+        <h1 class="hero__name">Zhang Qiuyu<small>张秋雨</small></h1>
+        <p class="hero__role">
+          M.S. in Port, Coastal and Offshore Engineering at Hohai University, working on <strong>multimodal typhoon data fusion and large weather-model inference</strong>. I forecast typhoon tracks and intensity with Pangu-Weather and couple the results into ADCIRC for storm surge modeling — intensity correction cuts central-pressure MAE by <strong>46–52%</strong>.
+        </p>
+
+        <ul class="hero__meta">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.2-7-11a7 7 0 1 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            Nanjing, China
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 4l9 5.5"/><path d="M5 10.5V20h14v-9.5"/><path d="M9.5 20v-5h5v5"/></svg>
+            Hohai University · M.S.
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20a7.2 7.2 0 0 1 14.4 0"/></svg>
+            25 years old
+          </li>
+        </ul>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="../assets/resume.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v11"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M4.5 19.5h15"/></svg>
+            Download Resume
+          </a>
+          <a class="btn btn--ghost" href="mailto:15108360364@163.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.6 6.6 8.4 6 8.4-6"/></svg>
+            15108360364@163.com
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__avatar">
+        <img src="../assets/img/avatar.jpg" alt="Zhang Qiuyu" width="520" height="705">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="about">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">About</span>
+        <h2 class="section__title">About me</h2>
+      </div>
+
+      <div class="about">
+        <div class="about__text reveal">
+          <p>
+            M.S. in Port, Coastal and Offshore Engineering at Hohai University, researching <strong>navigation attitude sensing, multimodal typhoon data fusion and large-model inference</strong>. At China's Ministry of Water Resources I worked on localizing the US POSSIM storm-surge mapping model for Chinese waters — building an automatic parsing and fusion pipeline for heterogeneous CMA and JTWC typhoon data, and re-calibrating key parameters (radius of maximum wind, central pressure) together with warning thresholds.
+          </p>
+          <p>
+            Using <strong>Pangu-Weather</strong> I forecast typhoon tracks and intensity with 1/3/6/24-hour rolling inference plus XGBoost-based intensity correction, then couple the corrected wind and pressure fields into the <strong>ADCIRC</strong> hydrodynamic model for storm surge simulation. I hold 1 granted and 4 pending invention patents, 1 software copyright and 2 EI-indexed papers; in 2025 I received both the Best Student Paper Award and the Best Student Presentation Award at APAC 2025 (the only recipients from China), along with the Huiyan Education &amp; Technology Fund Scholarship.
+          </p>
+        </div>
+
+        <aside class="facts reveal">
+          <dl>
+            <div class="facts__row"><dt>Focus</dt><dd>Typhoon forecasting · Storm surge</dd></div>
+            <div class="facts__row"><dt>Education</dt><dd>M.S. · Class of 2026</dd></div>
+            <div class="facts__row"><dt>Based in</dt><dd>Nanjing, China</dd></div>
+            <div class="facts__row"><dt>Research output</dt><dd>5 patents · 1 copyright · 2 EI</dd></div>
+            <div class="facts__row"><dt>Languages</dt><dd>Chinese / English (IELTS 7.0)</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><span class="stat__num">46–52%</span><span class="stat__label">Lower central-pressure MAE</span></div>
+        <div class="stat"><span class="stat__num">0.17 m</span><span class="stat__label">Total water level RMSE</span></div>
+        <div class="stat"><span class="stat__num">2</span><span class="stat__label">APAC 2025 best awards (only from China)</span></div>
+        <div class="stat"><span class="stat__num">7.0</span><span class="stat__label">IELTS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Experience</span>
+        <h2 class="section__title">Experience</h2>
+        <p class="section__desc">From a national-level international cooperation project to radar algorithm work — data fusion, model inference and edge deployment.</p>
+      </div>
+
+      <ol class="timeline reveal">
+        <li class="tl-item tl-item--now">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-title">R&amp;D Intern, International Project</h3>
+              <div class="tl-org">Ministry of Water Resources of China · POSSIM Localization</div>
+            </div>
+            <span class="tl-date">Sep 2024 – Sep 2026</span>
+          </div>
+          <div class="tl-body">
+            <ul>
+              <li>Localized the US POSSIM storm-surge mapping model for Chinese waters; built an automatic parsing and fusion module for heterogeneous typhoon data from CMA and JTWC</li>
+              <li>Re-calibrated the radius of maximum wind, central pressure and warning thresholds so the model matches typhoon characteristics in Chinese coastal waters</li>
+              <li>Served as the Sino-US technical liaison, running model-principle discussions, requirement clarification, parameter configuration and troubleshooting entirely in English</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-title">Algorithm Intern</h3>
+              <div class="tl-org">Naruida Radar Technology Co., Ltd.</div>
+            </div>
+            <span class="tl-date">Jul 2025 – Feb 2026</span>
+          </div>
+          <div class="tl-body">
+            <ul>
+              <li>Built a temporal tracking and trajectory-prediction model for ship targets with Transformer and LSTM, fusing SAR and infrared features</li>
+              <li>Improved tracking continuity and trajectory stability under cluttered backgrounds</li>
+              <li>Integrated the algorithm and deployed it on Jetson Nano; lightweighting and inference optimization delivered a 40% speedup, meeting real-time requirements</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="projects">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Projects</span>
+        <h2 class="section__title">Selected projects</h2>
+      </div>
+
+      <div class="projects">
+        <article class="card card--wide reveal">
+          <div class="card__top">
+            <span class="tag">Large model · Numerical modeling</span>
+            <span class="card__date">Mar 2024 – May 2026</span>
+          </div>
+          <h3 class="card__title">
+            <a href="https://github.com/ccccty/typhoonpangu" target="_blank" rel="noopener">Pangu-Weather Driven Typhoon Tracking and Storm Surge Simulation</a>
+          </h3>
+          <p class="card__desc">
+            Typhoon track and intensity forecasting with Pangu-Weather, using 1/3/6/24-hour rolling inference and XGBoost-based dynamic intensity correction. The corrected wind and pressure fields are reconstructed and coupled into the ADCIRC 2-D hydrodynamic model, closing the chain from meteorological forcing to nearshore surge prediction. The best 1-hour scheme cut central-pressure MAE by <strong>46–52%</strong> and maximum-wind MAE by <strong>51–65%</strong>; the best surge scheme reached a total water level RMSE of <strong>0.17 m</strong>, a mean maximum-surge error of 0.13 m and a peak-timing error of 0.9 h — 1–1.7 h shorter than the operational JTWC scheme.
+          </p>
+          <div class="card__stack">
+            <span class="chip">Pangu-Weather</span>
+            <span class="chip">XGBoost</span>
+            <span class="chip">ADCIRC</span>
+            <span class="chip">ERA5 / CMA / JTWC</span>
+            <span class="chip">Rolling inference</span>
+            <span class="chip">Python</span>
+          </div>
+          <div class="card__links">
+            <a href="https://github.com/ccccty/typhoonpangu" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.35 4.69-4.58 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="tag">International · MWR</span>
+            <span class="card__date">Sep 2024 – Sep 2026</span>
+          </div>
+          <h3 class="card__title">POSSIM Localization for Chinese Waters</h3>
+          <p class="card__desc">
+            Adapted the US POSSIM water-level mapping model for Chinese waters: an automatic parsing and fusion pipeline for CMA and JTWC typhoon data, plus localized recalibration of key parameters (radius of maximum wind, central pressure) and warning thresholds. Ran the full technical collaboration with the US team in English.
+          </p>
+          <div class="card__stack">
+            <span class="chip">POSSIM</span>
+            <span class="chip">CMA / JTWC</span>
+            <span class="chip">Data fusion</span>
+            <span class="chip">Parameter calibration</span>
+          </div>
+          <div class="card__links">
+            <a href="#experience">Context →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="tag">Radar vision · Naruida</span>
+            <span class="card__date">Jul 2025 – Feb 2026</span>
+          </div>
+          <h3 class="card__title">SAR–Infrared Multimodal Ship Tracking</h3>
+          <p class="card__desc">
+            A Transformer + LSTM model for temporal tracking and trajectory prediction of ship targets, fusing SAR and infrared modalities to keep targets tracked through rough seas and low-contrast conditions. Deployed on Jetson Nano with a 40% inference speedup.
+          </p>
+          <div class="card__stack">
+            <span class="chip">Transformer</span>
+            <span class="chip">LSTM</span>
+            <span class="chip">SAR</span>
+            <span class="chip">Infrared</span>
+            <span class="chip">Jetson Nano</span>
+          </div>
+          <div class="card__links">
+            <a href="#experience">Context →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Education</span>
+        <h2 class="section__title">Education</h2>
+      </div>
+
+      <ol class="timeline reveal">
+        <li class="tl-item">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-title">Hohai University <span style="margin-left:8px;font-size:13px;font-weight:500;color:var(--text-mute)">Project 211</span></h3>
+              <div class="tl-org">M.S. in Port, Coastal and Offshore Engineering</div>
+            </div>
+            <span class="tl-date">Sep 2023 – Jun 2026</span>
+          </div>
+          <div class="tl-body">
+            <ul>
+              <li>Research: navigation attitude sensing, multimodal typhoon data fusion and large-model inference</li>
+              <li>Thesis: <em>Application of Pangu-Weather in Storm Surge Simulation of the Yangtze River Estuary</em> (advisors: Prof. Zhang Jinshan, Assoc. Prof. Zhao Hongjun)</li>
+              <li>1 granted and 4 pending patents; 2 EI-indexed papers</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-title">Southeast University <span style="margin-left:8px;font-size:13px;font-weight:500;color:var(--text-mute)">Project 985</span></h3>
+              <div class="tl-org">B.Eng. in Port, Coastal and Waterway Engineering</div>
+            </div>
+            <span class="tl-date">Sep 2019 – Jun 2023</span>
+          </div>
+          <div class="tl-body">
+            <ul>
+              <li>Research: weather forecasting and marine environment modeling</li>
+              <li>1 granted patent</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="skills">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Skills</span>
+        <h2 class="section__title">Technical skills</h2>
+      </div>
+
+      <div class="skills reveal">
+        <div>
+          <p class="skill__label">Perception &amp; Trajectory</p>
+          <ul class="skill__list">
+            <li>Transformer / LSTM</li>
+            <li>SAR–infrared fusion</li>
+            <li>Object tracking</li>
+            <li>Trajectory prediction</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="skill__label">AI Weather &amp; Data</p>
+          <ul class="skill__list">
+            <li>Pangu-Weather</li>
+            <li>CMA / JTWC / ERA5</li>
+            <li>Rolling track inference</li>
+            <li>XGBoost intensity correction</li>
+            <li>Wind–pressure field reconstruction</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="skill__label">Storm Surge Modeling</p>
+          <ul class="skill__list">
+            <li>ADCIRC 2-D hydrodynamics</li>
+            <li>Tide &amp; surge simulation</li>
+            <li>Model validation</li>
+            <li>ArcGIS / QGIS</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="skill__label">Engineering</p>
+          <ul class="skill__list">
+            <li>Python</li>
+            <li>Jetson Nano deployment</li>
+            <li>Model lightweighting</li>
+            <li>Inference acceleration</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="skill__label">Languages</p>
+          <ul class="skill__list">
+            <li>English (IELTS 7.0)</li>
+            <li>English technical meetings</li>
+            <li>Cross-border collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="honors">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="section__kicker">Honors</span>
+        <h2 class="section__title">Honors &amp; research output</h2>
+      </div>
+
+      <ul class="honors reveal">
+        <li><span class="honors__year">2025</span><span class="honors__name">APAC 2025 Best Student Paper Award<span class="chip" style="margin-left:8px">Only recipient from China</span></span></li>
+        <li><span class="honors__year">2025</span><span class="honors__name">APAC 2025 Best Student Presentation Award<span class="chip" style="margin-left:8px">Only recipient from China</span></span></li>
+        <li><span class="honors__year">2025</span><span class="honors__name">Huiyan Education &amp; Technology Fund Scholarship (ranked 2nd in cohort)</span></li>
+        <li><span class="honors__year">2025</span><span class="honors__name">WMO/ESCAP Typhoon Committee POSSIM Training · Completed (Guam)</span></li>
+        <li><span class="honors__year">2024</span><span class="honors__name">WMO/ESCAP Typhoon Committee POSSIM Training · Completed (Nanjing)</span></li>
+        <li><span class="honors__year">2023–26</span><span class="honors__name">Graduate League Branch Secretary · Outstanding League Member 3 years running</span></li>
+      </ul>
+
+      <div class="gallery reveal">
+        <figure>
+          <a href="../assets/img/wmo-2025.jpg" target="_blank" rel="noopener">
+            <img src="../assets/img/wmo-2025.jpg" alt="WMO/ESCAP Typhoon Committee POSSIM training certificate, Guam 2025" loading="lazy">
+          </a>
+          <figcaption>WMO/ESCAP POSSIM Training · Guam 2025</figcaption>
+        </figure>
+        <figure>
+          <a href="../assets/img/wmo-2024.jpg" target="_blank" rel="noopener">
+            <img src="../assets/img/wmo-2024.jpg" alt="WMO/ESCAP Typhoon Committee POSSIM training certificate, Nanjing 2024" loading="lazy">
+          </a>
+          <figcaption>WMO/ESCAP POSSIM Training · Nanjing 2024</figcaption>
+        </figure>
+        <figure>
+          <a href="../assets/img/award-huiyan.jpg" target="_blank" rel="noopener">
+            <img src="../assets/img/award-huiyan.jpg" alt="Huiyan Education and Technology Fund scholarship certificate 2025" loading="lazy">
+          </a>
+          <figcaption>Huiyan Scholarship · 2025</figcaption>
+        </figure>
+      </div>
+
+      <div class="section__head reveal" style="margin:44px 0 20px">
+        <h3 class="section__title" style="font-size:19px">Research output</h3>
+      </div>
+
+      <ul class="honors reveal">
+        <li><span class="honors__year">Patent</span><span class="honors__name">Invention patent ZL 2025 1 1862221.4 (first inventor) · granted Mar 2026</span></li>
+        <li><span class="honors__year">Software</span><span class="honors__name">Typhoon Track Prediction System Fusing Multi-Source Weather Data V1.0 · 2025SR1807184</span></li>
+        <li><span class="honors__year">Papers</span><span class="honors__name">APAC 2025 conference paper (Best Student Paper) · 2 EI-indexed papers</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="contact__title">Talk typhoons and oceans?</h2>
+      <p class="contact__desc">
+        I'm interested in roles across typhoon forecasting, storm surge modeling and AI-for-weather. Always happy to talk shop — I usually reply the same day.
+      </p>
+
+      <div class="contact__actions">
+        <a class="btn btn--primary" href="mailto:15108360364@163.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.6 6.6 8.4 6 8.4-6"/></svg>
+          15108360364@163.com
+        </a>
+        <a class="btn btn--ghost" href="tel:+8615108360364">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7.6 3.5h2.2l1.6 4-2 1.3a11 11 0 0 0 5.8 5.8l1.3-2 4 1.6v2.2a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5.6 5.7a2 2 0 0 1 2-2.2z"/></svg>
+          +86 151 0836 0364
+        </a>
+        <a class="btn btn--ghost" href="../assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      </div>
+
+      <div class="footer">
+        <span>© <span id="year">2026</span> Zhang Qiuyu</span>
+        <span>Hand-written HTML / CSS · No framework</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
