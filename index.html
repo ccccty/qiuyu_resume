@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>张秋雨 · 港口海岸与近海工程 | 台风智能预测 · 风暴潮模拟</title>
-<meta name="description" content="张秋雨，河海大学港口、近海及海岸工程硕士。研究多源台风数据融合与大模型推理，基于盘古气象大模型与 ADCIRC 开展台风路径预测与风暴潮增水模拟。">
+<meta name="description" content="张秋雨，河海大学港口、近海及海岸工程硕士。研究多源台风数据融合与大模型推理，基于 AI 气象大模型与 ADCIRC+SWAN 开展台风路径预测与风暴潮增水模拟。">
 <meta name="author" content="张秋雨">
 <meta property="og:title" content="张秋雨 · 台风智能预测与风暴潮模拟">
 <meta property="og:description" content="多源台风数据融合 · 大模型推理 · 风暴潮数值模拟">
@@ -49,7 +49,7 @@
         <p class="hero__eyebrow">港口海岸与近海工程 · 台风预测 / 风暴潮模拟</p>
         <h1 class="hero__name">张秋雨<small>Zhang Qiuyu</small></h1>
         <p class="hero__role">
-          河海大学港口、近海及海岸工程硕士，研究<strong>多源台风数据融合与大模型推理</strong>。用盘古气象大模型做台风路径与强度预测，耦合 ADCIRC 做风暴潮增水模拟——强度订正后中心气压 MAE 降低 <strong>46%–52%</strong>。
+          河海大学港口、近海及海岸工程硕士，研究<strong>多源台风数据融合与大模型推理</strong>。用 AI 气象大模型做台风路径与强度预测，耦合 ADCIRC+SWAN 做风暴潮增水与波浪模拟——强度订正后中心气压 MAE 降低 <strong>46%–52%</strong>。
         </p>
 
         <ul class="hero__meta">
@@ -99,7 +99,7 @@
             河海大学港口、近海及海岸工程硕士，研究方向为<strong>航行姿态感知、多源台风数据融合与大模型推理</strong>。在中国水利部参与国际合作项目，负责美国台风制图模型 POSSIM 的中国海域本土化适配：开发 CMA、JTWC 等多源异构台风数据的自动解析与融合模块，并完成最大风速半径、中心气压等关键参数及预警阈值的本土化重构。
           </p>
           <p>
-            基于<strong>盘古气象大模型</strong>开展台风路径与强度预测，设计 1/3/6/24 h 滚动推理策略并引入 XGBoost 强度订正，耦合 <strong>ADCIRC</strong> 二维水动力模型完成风暴潮增水模拟。累计获授权发明专利 1 项、受理 4 项，软件著作权 1 项，EI 检索论文 2 篇；2025 年获亚太平洋海岸国际会议最佳学生论文奖与最佳学生汇报奖（均为中国唯一），并获慧延教育科技基金奖学金。
+            基于<strong>AI 气象大模型</strong>开展台风路径与强度预测，设计 1/3/6/24 h 滚动推理策略并引入 XGBoost 强度订正，耦合 <strong>ADCIRC+SWAN</strong> 模型完成风暴潮增水与波浪模拟；熟练使用 SMS 完成网格与前处理，用 ArcGIS / QGIS 做成果成图与分析。累计获授权发明专利 1 项、受理 4 项，软件著作权 1 项，EI 检索论文 2 篇；2025 年获亚太平洋海岸国际会议最佳学生论文奖与最佳学生汇报奖（均为中国唯一），并获慧延教育科技基金奖学金。
           </p>
         </div>
 
@@ -185,17 +185,18 @@
             <span class="card__date">2024.03 – 2026.05</span>
           </div>
           <h3 class="card__title">
-            <a href="https://github.com/ccccty/typhoonpangu" target="_blank" rel="noopener">盘古气象大模型驱动的台风路径预测与风暴潮增水模拟</a>
+            <a href="https://github.com/ccccty/typhoonpangu" target="_blank" rel="noopener">AI 气象大模型驱动的台风路径预测与风暴潮增水模拟</a>
           </h3>
           <p class="card__desc">
-            基于盘古气象大模型开展台风路径与强度预测，设计 1/3/6/24 h 滚动推理策略并引入 XGBoost 进行强度动态修正；基于预测路径与修正强度完成台风风压场重构，耦合 ADCIRC 二维水动力模型，打通从气象强迫场构建到近岸增水预测的完整链条。最优 1 h 方案路径预测表现最佳：中心气压 MAE 降低 <strong>46%–52%</strong>，最大风速 MAE 降低 <strong>51%–65%</strong>；最优增水方案总水位 RMSE <strong>0.17 m</strong>、最大增水平均误差 0.13 m、峰现时间误差 0.9 h，相较 JTWC 业务方案峰现误差缩短 1–1.7 h。
+            基于 AI 气象大模型开展台风路径与强度预测，设计 1/3/6/24 h 滚动推理策略并引入 XGBoost 进行强度动态修正；基于预测路径与修正强度完成台风风压场重构，耦合 ADCIRC+SWAN 模型，打通从气象强迫场构建到近岸增水与波浪预测的完整链条。最优 1 h 方案路径预测表现最佳：中心气压 MAE 降低 <strong>46%–52%</strong>，最大风速 MAE 降低 <strong>51%–65%</strong>；最优增水方案总水位 RMSE <strong>0.17 m</strong>、最大增水平均误差 0.13 m、峰现时间误差 0.9 h，相较 JTWC 业务方案峰现误差缩短 1–1.7 h。
           </p>
           <div class="card__stack">
-            <span class="chip">盘古气象大模型</span>
+            <span class="chip">AI 气象大模型</span>
             <span class="chip">XGBoost</span>
-            <span class="chip">ADCIRC</span>
+            <span class="chip">ADCIRC+SWAN</span>
+            <span class="chip">SMS</span>
+            <span class="chip">ArcGIS / QGIS</span>
             <span class="chip">ERA5 / CMA / JTWC</span>
-            <span class="chip">滚动推理</span>
             <span class="chip">Python</span>
           </div>
           <div class="card__links">
@@ -222,6 +223,10 @@
             <span class="chip">参数标定</span>
           </div>
           <div class="card__links">
+            <a href="https://mp.weixin.qq.com/s/tonPh8E_O9qVgUuTpgzXSg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5h4.5"/></svg>
+              项目报道
+            </a>
             <a href="#experience">项目背景 →</a>
           </div>
         </article>
@@ -317,7 +322,7 @@
         <div>
           <p class="skill__label">AI 气象与数据处理</p>
           <ul class="skill__list">
-            <li>盘古气象大模型</li>
+            <li>AI 气象大模型</li>
             <li>CMA / JTWC / ERA5</li>
             <li>台风路径滚动推理</li>
             <li>XGBoost 强度订正</li>
@@ -326,12 +331,14 @@
         </div>
 
         <div>
-          <p class="skill__label">风暴潮数值建模</p>
+          <p class="skill__label">风暴潮数值建模（熟练）</p>
           <ul class="skill__list">
-            <li>ADCIRC 二维水动力模型</li>
+            <li>SMS 网格与前处理</li>
+            <li>ADCIRC+SWAN 耦合模型</li>
             <li>天文潮与风暴潮模拟</li>
-            <li>模型验证</li>
-            <li>ArcGIS / QGIS</li>
+            <li>模型验证与率定</li>
+            <li>ArcGIS（熟练）</li>
+            <li>QGIS（熟练）</li>
           </ul>
         </div>
 
@@ -366,26 +373,24 @@
       </div>
 
       <ul class="honors reveal">
-        <li><span class="honors__year">2025</span><span class="honors__name">亚太平洋海岸国际会议（APAC）最佳学生论文奖<span class="chip" style="margin-left:8px">中国唯一</span></span></li>
-        <li><span class="honors__year">2025</span><span class="honors__name">亚太平洋海岸国际会议（APAC）最佳学生汇报奖<span class="chip" style="margin-left:8px">中国唯一</span></span></li>
-        <li><span class="honors__year">2025</span><span class="honors__name">慧延教育科技基金 硕士研究生奖学金（专业课排名第二）</span></li>
-        <li><span class="honors__year">2025</span><span class="honors__name">WMO/ESCAP 台风委员会 POSSIM 国际培训 · 结业（关岛）</span></li>
-        <li><span class="honors__year">2024</span><span class="honors__name">WMO/ESCAP 台风委员会 POSSIM 国际培训 · 结业（南京）</span></li>
+        <li><span class="honors__year">2025</span><span class="honors__name">亚太平洋海岸国际会议（APAC）最佳学生论文奖 · 最佳学生汇报奖<span class="chip" style="margin-left:8px">均为中国唯一</span></span></li>
+        <li><span class="honors__year">2025</span><span class="honors__name">慧延教育科技基金 <strong>院士奖学金（国奖）</strong> · 硕士专业课排名第二</span></li>
+        <li><span class="honors__year">2024–25</span><span class="honors__name">WMO/ESCAP 台风委员会 POSSIM 项目攻关（南京 / 关岛）</span></li>
         <li><span class="honors__year">2023–26</span><span class="honors__name">硕士团支部书记 · 连续 3 年优秀共青团员</span></li>
       </ul>
 
       <div class="gallery reveal">
         <figure>
           <a href="assets/img/wmo-2025.jpg" target="_blank" rel="noopener">
-            <img src="assets/img/wmo-2025.jpg" alt="WMO/ESCAP 台风委员会 POSSIM 培训结业证书（关岛，2025）" loading="lazy">
+            <img src="assets/img/wmo-2025.jpg" alt="WMO/ESCAP 台风委员会 POSSIM 项目证书（关岛，2025）" loading="lazy">
           </a>
-          <figcaption>WMO/ESCAP 台风委员会 POSSIM 培训 · 关岛 2025</figcaption>
+          <figcaption>WMO/ESCAP 台风委员会 POSSIM · 关岛 2025</figcaption>
         </figure>
         <figure>
           <a href="assets/img/wmo-2024.jpg" target="_blank" rel="noopener">
-            <img src="assets/img/wmo-2024.jpg" alt="WMO/ESCAP 台风委员会 POSSIM 培训证书（南京，2024）" loading="lazy">
+            <img src="assets/img/wmo-2024.jpg" alt="WMO/ESCAP 台风委员会 POSSIM 项目证书（南京，2024）" loading="lazy">
           </a>
-          <figcaption>WMO/ESCAP 台风委员会 POSSIM 培训 · 南京 2024</figcaption>
+          <figcaption>WMO/ESCAP 台风委员会 POSSIM · 南京 2024</figcaption>
         </figure>
         <figure>
           <a href="assets/img/award-huiyan.jpg" target="_blank" rel="noopener">

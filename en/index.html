@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zhang Qiuyu · Coastal &amp; Offshore Engineering | Typhoon Forecasting · Storm Surge Modeling</title>
-<meta name="description" content="Zhang Qiuyu, M.S. in Port, Coastal and Offshore Engineering at Hohai University. Multimodal typhoon data fusion, Pangu-Weather inference and ADCIRC storm surge modeling.">
+<meta name="description" content="Zhang Qiuyu, M.S. in Port, Coastal and Offshore Engineering at Hohai University. Multimodal typhoon data fusion, AI weather-model inference and ADCIRC+SWAN storm surge modeling.">
 <meta name="author" content="Zhang Qiuyu">
 <meta property="og:title" content="Zhang Qiuyu · Typhoon Forecasting & Storm Surge Modeling">
 <meta property="og:description" content="Multimodal typhoon data fusion · Large weather model inference · Storm surge modeling">
@@ -47,7 +47,7 @@
         <p class="hero__eyebrow">Coastal &amp; Offshore Engineering · Typhoon Forecasting / Storm Surge</p>
         <h1 class="hero__name">Zhang Qiuyu<small>张秋雨</small></h1>
         <p class="hero__role">
-          M.S. in Port, Coastal and Offshore Engineering at Hohai University, working on <strong>multimodal typhoon data fusion and large weather-model inference</strong>. I forecast typhoon tracks and intensity with Pangu-Weather and couple the results into ADCIRC for storm surge modeling — intensity correction cuts central-pressure MAE by <strong>46–52%</strong>.
+          M.S. in Port, Coastal and Offshore Engineering at Hohai University, working on <strong>multimodal typhoon data fusion and large weather-model inference</strong>. I forecast typhoon tracks and intensity with AI weather models and couple the results into ADCIRC+SWAN for storm surge and wave modeling — intensity correction cuts central-pressure MAE by <strong>46–52%</strong>.
         </p>
 
         <ul class="hero__meta">
@@ -96,7 +96,7 @@
             M.S. in Port, Coastal and Offshore Engineering at Hohai University, researching <strong>navigation attitude sensing, multimodal typhoon data fusion and large-model inference</strong>. At China's Ministry of Water Resources I worked on localizing the US POSSIM storm-surge mapping model for Chinese waters — building an automatic parsing and fusion pipeline for heterogeneous CMA and JTWC typhoon data, and re-calibrating key parameters (radius of maximum wind, central pressure) together with warning thresholds.
           </p>
           <p>
-            Using <strong>Pangu-Weather</strong> I forecast typhoon tracks and intensity with 1/3/6/24-hour rolling inference plus XGBoost-based intensity correction, then couple the corrected wind and pressure fields into the <strong>ADCIRC</strong> hydrodynamic model for storm surge simulation. I hold 1 granted and 4 pending invention patents, 1 software copyright and 2 EI-indexed papers; in 2025 I received both the Best Student Paper Award and the Best Student Presentation Award at APAC 2025 (the only recipients from China), along with the Huiyan Education &amp; Technology Fund Scholarship.
+            Using <strong>AI weather models</strong> I forecast typhoon tracks and intensity with 1/3/6/24-hour rolling inference plus XGBoost-based intensity correction, then couple the corrected wind and pressure fields into the <strong>ADCIRC+SWAN</strong> model for storm surge and wave simulation. I am a proficient user of SMS for meshing and pre-processing, and of ArcGIS / QGIS for mapping and analysis. I hold 1 granted and 4 pending invention patents, 1 software copyright and 2 EI-indexed papers; in 2025 I received both the Best Student Paper Award and the Best Student Presentation Award at APAC 2025 (the only recipients from China), along with the Huiyan Education &amp; Technology Fund Scholarship.
           </p>
         </div>
 
@@ -180,17 +180,18 @@
             <span class="card__date">Mar 2024 – May 2026</span>
           </div>
           <h3 class="card__title">
-            <a href="https://github.com/ccccty/typhoonpangu" target="_blank" rel="noopener">Pangu-Weather Driven Typhoon Tracking and Storm Surge Simulation</a>
+            <a href="https://github.com/ccccty/typhoonpangu" target="_blank" rel="noopener">AI Weather Model Driven Typhoon Tracking and Storm Surge Simulation</a>
           </h3>
           <p class="card__desc">
-            Typhoon track and intensity forecasting with Pangu-Weather, using 1/3/6/24-hour rolling inference and XGBoost-based dynamic intensity correction. The corrected wind and pressure fields are reconstructed and coupled into the ADCIRC 2-D hydrodynamic model, closing the chain from meteorological forcing to nearshore surge prediction. The best 1-hour scheme cut central-pressure MAE by <strong>46–52%</strong> and maximum-wind MAE by <strong>51–65%</strong>; the best surge scheme reached a total water level RMSE of <strong>0.17 m</strong>, a mean maximum-surge error of 0.13 m and a peak-timing error of 0.9 h — 1–1.7 h shorter than the operational JTWC scheme.
+            Typhoon track and intensity forecasting with AI weather models, using 1/3/6/24-hour rolling inference and XGBoost-based dynamic intensity correction. The corrected wind and pressure fields are reconstructed and coupled into the ADCIRC+SWAN model, closing the chain from meteorological forcing to nearshore surge and wave prediction. The best 1-hour scheme cut central-pressure MAE by <strong>46–52%</strong> and maximum-wind MAE by <strong>51–65%</strong>; the best surge scheme reached a total water level RMSE of <strong>0.17 m</strong>, a mean maximum-surge error of 0.13 m and a peak-timing error of 0.9 h — 1–1.7 h shorter than the operational JTWC scheme.
           </p>
           <div class="card__stack">
-            <span class="chip">Pangu-Weather</span>
+            <span class="chip">AI weather model</span>
             <span class="chip">XGBoost</span>
-            <span class="chip">ADCIRC</span>
+            <span class="chip">ADCIRC+SWAN</span>
+            <span class="chip">SMS</span>
+            <span class="chip">ArcGIS / QGIS</span>
             <span class="chip">ERA5 / CMA / JTWC</span>
-            <span class="chip">Rolling inference</span>
             <span class="chip">Python</span>
           </div>
           <div class="card__links">
@@ -217,6 +218,10 @@
             <span class="chip">Parameter calibration</span>
           </div>
           <div class="card__links">
+            <a href="https://mp.weixin.qq.com/s/tonPh8E_O9qVgUuTpgzXSg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5h4.5"/></svg>
+              Project coverage
+            </a>
             <a href="#experience">Context →</a>
           </div>
         </article>
@@ -310,7 +315,7 @@
         <div>
           <p class="skill__label">AI Weather &amp; Data</p>
           <ul class="skill__list">
-            <li>Pangu-Weather</li>
+            <li>AI weather models</li>
             <li>CMA / JTWC / ERA5</li>
             <li>Rolling track inference</li>
             <li>XGBoost intensity correction</li>
@@ -319,12 +324,14 @@
         </div>
 
         <div>
-          <p class="skill__label">Storm Surge Modeling</p>
+          <p class="skill__label">Storm Surge Modeling (proficient)</p>
           <ul class="skill__list">
-            <li>ADCIRC 2-D hydrodynamics</li>
+            <li>SMS meshing &amp; pre-processing</li>
+            <li>ADCIRC+SWAN coupled model</li>
             <li>Tide &amp; surge simulation</li>
-            <li>Model validation</li>
-            <li>ArcGIS / QGIS</li>
+            <li>Model validation &amp; calibration</li>
+            <li>ArcGIS (proficient)</li>
+            <li>QGIS (proficient)</li>
           </ul>
         </div>
 
@@ -358,26 +365,24 @@
       </div>
 
       <ul class="honors reveal">
-        <li><span class="honors__year">2025</span><span class="honors__name">APAC 2025 Best Student Paper Award<span class="chip" style="margin-left:8px">Only recipient from China</span></span></li>
-        <li><span class="honors__year">2025</span><span class="honors__name">APAC 2025 Best Student Presentation Award<span class="chip" style="margin-left:8px">Only recipient from China</span></span></li>
-        <li><span class="honors__year">2025</span><span class="honors__name">Huiyan Education &amp; Technology Fund Scholarship (ranked 2nd in cohort)</span></li>
-        <li><span class="honors__year">2025</span><span class="honors__name">WMO/ESCAP Typhoon Committee POSSIM Training · Completed (Guam)</span></li>
-        <li><span class="honors__year">2024</span><span class="honors__name">WMO/ESCAP Typhoon Committee POSSIM Training · Completed (Nanjing)</span></li>
+        <li><span class="honors__year">2025</span><span class="honors__name">APAC 2025 Best Student Paper Award &amp; Best Student Presentation Award<span class="chip" style="margin-left:8px">Only recipients from China</span></span></li>
+        <li><span class="honors__year">2025</span><span class="honors__name">Huiyan Education &amp; Technology Fund <strong>Academician Scholarship (national-level award)</strong> · ranked 2nd in cohort</span></li>
+        <li><span class="honors__year">2024–25</span><span class="honors__name">WMO/ESCAP Typhoon Committee POSSIM Project Research (Nanjing / Guam)</span></li>
         <li><span class="honors__year">2023–26</span><span class="honors__name">Graduate League Branch Secretary · Outstanding League Member 3 years running</span></li>
       </ul>
 
       <div class="gallery reveal">
         <figure>
           <a href="../assets/img/wmo-2025.jpg" target="_blank" rel="noopener">
-            <img src="../assets/img/wmo-2025.jpg" alt="WMO/ESCAP Typhoon Committee POSSIM training certificate, Guam 2025" loading="lazy">
+            <img src="../assets/img/wmo-2025.jpg" alt="WMO/ESCAP Typhoon Committee POSSIM certificate, Guam 2025" loading="lazy">
           </a>
-          <figcaption>WMO/ESCAP POSSIM Training · Guam 2025</figcaption>
+          <figcaption>WMO/ESCAP POSSIM · Guam 2025</figcaption>
         </figure>
         <figure>
           <a href="../assets/img/wmo-2024.jpg" target="_blank" rel="noopener">
-            <img src="../assets/img/wmo-2024.jpg" alt="WMO/ESCAP Typhoon Committee POSSIM training certificate, Nanjing 2024" loading="lazy">
+            <img src="../assets/img/wmo-2024.jpg" alt="WMO/ESCAP Typhoon Committee POSSIM certificate, Nanjing 2024" loading="lazy">
           </a>
-          <figcaption>WMO/ESCAP POSSIM Training · Nanjing 2024</figcaption>
+          <figcaption>WMO/ESCAP POSSIM · Nanjing 2024</figcaption>
         </figure>
         <figure>
           <a href="../assets/img/award-huiyan.jpg" target="_blank" rel="noopener">
