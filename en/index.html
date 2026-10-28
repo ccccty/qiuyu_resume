@@ -142,6 +142,7 @@
               <li>Localized the US POSSIM storm-surge mapping model for Chinese waters; built an automatic parsing and fusion module for heterogeneous typhoon data from CMA and JTWC</li>
               <li>Re-calibrated the radius of maximum wind, central pressure and warning thresholds so the model matches typhoon characteristics in Chinese coastal waters</li>
               <li>Served as the Sino-US technical liaison, running model-principle discussions, requirement clarification, parameter configuration and troubleshooting entirely in English</li>
+              <li>Project outcome: engineered the original Windows desktop tool into a <b>browser-based surge simulation platform (POSSIM-Web)</b> — decoupling the Fortran physics kernel from the UI, re-implementing the computation chain in numpy, and delivering frame-by-frame playback of a 1188×864 grid over a Leaflet basemap with live parameter recalculation and shareable deep links</li>
             </ul>
           </div>
         </li>
@@ -209,7 +210,7 @@
           </div>
           <h3 class="card__title">POSSIM Localization for Chinese Waters</h3>
           <p class="card__desc">
-            Adapted the US POSSIM water-level mapping model for Chinese waters: an automatic parsing and fusion pipeline for CMA and JTWC typhoon data, plus localized recalibration of key parameters (radius of maximum wind, central pressure) and warning thresholds. Ran the full technical collaboration with the US team in English.
+            Adapted the US POSSIM water-level mapping model for Chinese waters: an automatic parsing and fusion pipeline for CMA and JTWC typhoon data, plus localized recalibration of key parameters (radius of maximum wind, central pressure) and warning thresholds. Ran the full technical collaboration with the US team in English. The outcome has since been engineered into a browser-based simulation platform supporting frame-by-frame typhoon scenarios and real-time parameter recalculation.
           </p>
           <div class="card__stack">
             <span class="chip">POSSIM</span>
@@ -218,11 +219,14 @@
             <span class="chip">Parameter calibration</span>
           </div>
           <div class="card__links">
+            <a href="https://ccccty.github.io/POSSIM_web_china/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+              Live demo
+            </a>
             <a href="https://mp.weixin.qq.com/s/tonPh8E_O9qVgUuTpgzXSg" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6.5A1.5 1.5 0 0 1 5 5h4.5"/></svg>
               Project coverage
             </a>
-            <a href="#experience">Context →</a>
           </div>
         </article>
 
