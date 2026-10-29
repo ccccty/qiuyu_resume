@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>张秋雨 · 简历</title>
+<style>
+  @page { size: A4; margin: 11.5mm 17mm 8mm; }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    color: #111;
+    font-family: "SimSun", "宋体", "Songti SC", serif;
+    font-size: 9.9pt;
+    line-height: 1.45;
+  }
+
+  /* ---------- header ---------- */
+  header { border-bottom: 1px solid #333; padding-bottom: 6pt; margin-bottom: 2pt; }
+  .hdr { display: flex; justify-content: space-between; align-items: flex-start; gap: 10pt; }
+  .hdr__text { flex: 1; min-width: 0; padding-top: 7pt; }
+
+  h1 {
+    margin: 0 0 4pt;
+    font-family: "SimHei", "黑体", sans-serif;
+    font-size: 21pt;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+  }
+  .tagline {
+    margin: 0 0 5pt;
+    font-family: "SimHei", "黑体", sans-serif;
+    font-size: 9.2pt;
+    color: #333;
+    letter-spacing: 0.02em;
+  }
+  .contact { margin: 0; font-size: 9.2pt; color: #222; }
+  .contact span + span::before { content: "|"; margin: 0 5.5pt; color: #bbb; }
+
+  .hdr__side { display: flex; align-items: flex-start; gap: 7pt; flex: none; }
+  .hdr__qr { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 2.5pt; }
+  .hdr__qr img { width: 15mm; height: 15mm; display: block; }
+  .hdr__qr figcaption { font-size: 6pt; color: #6b7280; white-space: nowrap; }
+  .hdr__photo {
+    width: 19mm;
+    height: 25mm;
+    object-fit: cover;
+    object-position: 50% 16%;
+    border: 1px solid #e2e6ee;
+    flex: none;
+  }
+
+  /* ---------- sections ---------- */
+  h2 {
+    margin: 7pt 0 3pt;
+    padding-bottom: 1.5pt;
+    font-family: "SimHei", "黑体", sans-serif;
+    font-size: 12.2pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    border-bottom: 0.6pt solid #999;
+  }
+  h2:first-of-type { margin-top: 7pt; }
+
+  .item { margin-bottom: 2.4pt; }
+  .item:last-child { margin-bottom: 0; }
+
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+  .row .org { font-family: "SimHei", "黑体", sans-serif; font-weight: 700; font-size: 10.4pt; }
+  .row .role { color: #222; }
+  .row .role::before { content: "｜"; color: #999; }
+  .row .date { flex: none; font-size: 9.4pt; color: #333; white-space: nowrap; }
+
+  .meta { margin: 1pt 0 0; }
+  .link { color: #1a4d8f; }
+
+  ul { margin: 1.5pt 0 0; padding-left: 12pt; }
+  li { margin: 0 0 0.5pt; }
+  li::marker { color: #888; }
+
+  .strong { font-family: "SimHei", "黑体", sans-serif; font-weight: 700; }
+  .hl { font-family: "SimHei", "黑体", sans-serif; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hdr">
+    <div class="hdr__text">
+      <h1>张秋雨</h1>
+      <p class="tagline">港口海岸与近海工程 · 台风智能预测 / 风暴潮数值模拟</p>
+      <p class="contact">
+        <span>25 岁 · 女</span><span>南京</span><span>15108360364（微信同号）</span><span>15108360364@163.com</span>
+      </p>
+    </div>
+    <div class="hdr__side">
+      <figure class="hdr__qr">
+        <img src="assets/img/qr-site.png" alt="扫码查看在线简历与演示">
+        <figcaption>扫码看简历与演示</figcaption>
+      </figure>
+      <img class="hdr__photo" src="assets/img/avatar.jpg" alt="张秋雨">
+    </div>
+  </div>
+</header>
+
+<h2>教育背景</h2>
+
+<div class="item">
+  <div class="row">
+    <div><span class="org">河海大学（211）</span><span class="role">港航学院 · 港口、近海及海岸工程（学硕）</span></div>
+    <span class="date">2023.09 – 2026.06</span>
+  </div>
+  <p class="meta">研究方向：航行姿态感知，多源台风数据融合与大模型推理。获授权专利 1 项、受理专利 4 项，EI 检索论文 2 篇。</p>
+</div>
+
+<div class="item">
+  <div class="row">
+    <div><span class="org">东南大学（985）</span><span class="role">交通学院 · 港口海岸与航道工程（本科）</span></div>
+    <span class="date">2019.09 – 2023.06</span>
+  </div>
+  <p class="meta">研究方向：气象预报与海洋环境建模。获授权专利 1 项。</p>
+</div>
+
+<h2>核心技能</h2>
+<ul>
+  <li><span class="strong">智能感知与轨迹预测：</span>熟悉 Transformer / LSTM 时序建模，具备 SAR、红外等多模态数据融合、目标跟踪与轨迹预测算法开发经验。</li>
+  <li><span class="strong">AI 气象预测与数据处理：</span>熟悉 AI 气象大模型，具备 CMA、JTWC、ERA5 等多源气象数据处理经验，掌握台风路径滚动推理、XGBoost 强度订正及风压场重构方法；强度订正后中心气压 MAE 降低 46%–52%，最大风速 MAE 降低 51%–65%。</li>
+  <li><span class="strong">风暴潮数值建模：</span>掌握 ADCIRC+SWAN 耦合模型构建，熟练使用 SMS 完成网格与前处理，熟练使用 ArcGIS / QGIS 进行成图与分析，掌握天文潮与风暴潮模拟及模型验证；最优方案总水位 RMSE 为 0.17 m，最大增水平均误差 0.13 m。</li>
+  <li><span class="strong">英语及国际协作：</span>雅思 7.0，具备全英文技术会议、方案汇报及商务沟通能力；参与水利部国际合作项目赴美开展 POSSIM 模型本土化适配，与美国技术团队完成技术沟通与项目协作。</li>
+</ul>
+
+<h2>项目与实习经历</h2>
+
+<div class="item">
+  <div class="row">
+    <div><span class="org">中国水利部</span><span class="role">国际项目技术研发实习生</span></div>
+    <span class="date">2024.09 – 2026.09</span>
+  </div>
+  <ul>
+    <li>负责美国台风制图模型 POSSIM 的中国海域本土化适配，开发 CMA、JTWC 等多源异构台风数据自动解析与融合模块，并完成最大风速半径、中心气压等关键参数及预警阈值的本土化重构。</li>
+    <li>作为项目中美技术沟通成员，与美国技术团队全程使用英语开展模型原理讨论、需求澄清、参数配置及问题排查，并参与英文技术会议与结果汇报。</li>
+    <li><span class="hl">项目成果：POSSIM 在线推演平台（Web）。</span>将原 Windows 桌面版推演软件重构为浏览器端交互式大屏——物理内核与界面解耦、计算链以 numpy 复算，支持台风场景逐帧演进、参数实时重算与链接分享，打开网页即可推演，无需安装环境。<span class="hl">详情演示请扫描右上方二维码查看在线演示。</span></li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="row">
+    <div><span class="org">纳睿雷达科技股份有限公司</span><span class="role">算法实习生</span></div>
+    <span class="date">2025.07 – 2026.02</span>
+  </div>
+  <ul>
+    <li>基于 Transformer 与 LSTM 构建船舶目标时序跟踪与轨迹预测模型，融合 SAR 与红外多模态特征，提升复杂背景下目标连续跟踪与轨迹预测稳定性。</li>
+    <li>完成算法集成及 Jetson Nano 边缘端部署，通过模型轻量化与推理优化将推理速度提升 40%，满足实时处理需求。</li>
+  </ul>
+</div>
+
+<h2>项目经历</h2>
+
+<div class="item">
+  <div class="row">
+    <div><span class="org">AI 气象大模型驱动的台风预测与风暴潮增水模拟</span></div>
+    <span class="date">2024.03 – 2026.05</span>
+  </div>
+  <ul>
+    <li>基于 AI 气象大模型开展台风路径与强度预测，设计 1/3/6/24 h 滚动推理策略，并引入 XGBoost 进行强度动态修正；最优 1 h 方案路径预测表现最佳，中心气压 MAE 降低 46%–52%，最大风速 MAE 降低 51%–65%。</li>
+    <li>基于预测路径与修正强度完成台风风压场重构并耦合 ADCIRC+SWAN 模型，最优方案总水位 RMSE 为 0.17 m、最大增水平均误差 0.13 m、峰现时间误差 0.9 h，相较 JTWC 业务方案峰现时间误差缩短 1–1.7 h。</li>
+    <li>算法展示：<span class="link">https://github.com/ccccty/typhoonpangu</span></li>
+  </ul>
+</div>
+
+<h2>获奖经历</h2>
+<ul>
+  <li>2025 年获<span class="strong">院士奖学金</span>-慧延教育科技基金（硕士专业课成绩排名第二）。</li>
+  <li>2025 亚太平洋海岸国际会议最佳学生论文奖（中国唯一）、最佳学生汇报奖（中国唯一）。</li>
+  <li>2023.10 – 2026.06 担任硕士团支部书记，连续 3 年评为优秀共青团员。</li>
+</ul>
+
+</body>
+</html>
